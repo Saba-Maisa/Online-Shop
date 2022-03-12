@@ -1,0 +1,926 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+    
+        font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(255, 255, 255);
+     
+    }
+    
+    .header{
+       position: sticky;
+       top: 0;
+        background-color: rgb(12, 187, 56);
+        height: 55px;
+        z-index: 10;
+
+    
+    }
+    .logo{
+        position: relative;
+        text-decoration: none;
+        float: left;
+        font-size: 40px;
+        left: 1px;
+        width:-155px;
+        color:white;
+        cursor: pointer;
+        margin-left: 15px;
+        font-family: 'ArchyEDT-Bold';
+    }
+    
+    
+    .serch{
+        position: relative;
+        text-align: center;
+      text-decoration: none;
+      outline: none;
+    
+    }
+    
+    .sarch1{
+        position: relative;
+        height: 38px;
+        width: 500px;
+        border: none;
+        outline: none;
+        top: 9px;
+        right: 55px;
+        border-radius: 30px;
+        font-size: 15px;
+    }
+    .sarch2{
+        position: relative;
+        height: 35px;
+        width: 40px;
+        left: -100px;
+        border: none;
+        cursor: pointer;
+        top: 9px;
+        border-radius: 30px;
+        background-color: white;
+    }
+    .icon i  {
+    position: relative;
+    top: -20px;  
+     float: right;
+     cursor: pointer;
+     font-size: 25px;
+     color: rgb(255, 255, 255);
+     margin-left: 25px;
+     right: 110px;
+    
+     
+    }
+    
+    #kalata{
+      color: rgb(255, 255, 25);
+    
+    }
+    
+    
+    
+    
+    
+    .nuli{
+      position: absolute;
+       top: -13px;
+       right: -13px;
+       font-size: 15px;
+       padding: 2px 5px;
+       background-color: rgb(212, 4, 4);
+       border-radius: 50%;
+     }
+    
+    
+    
+    @media  screen and (max-width:1000px) {
+    .logo{
+        position: fixed;
+        font-size: 20px;
+     display: flex;
+     top:10px;
+     
+    
+    }
+    }
+    
+     @media  screen and (max-width:1000px) {
+         .sarch1{
+             width: 150px;
+             right: 30px;
+         }
+         
+     }
+    
+    
+     @media  screen and (max-width:1000px){
+        .sarch2{
+    left: -82px;
+    
+    
+        }
+        
+     }
+    
+    
+    
+     @media screen and (max-width:1000px) {
+         .icon i{
+    right: 0px;
+    margin-right: 10px;
+            
+         }
+    
+         
+     }
+     /* hederi -------------------------------------------------------------------------------------------------------------------------------*/
+     .slideshow-container{
+         position: relative;
+         height: 400px;
+     
+     }
+   
+
+     .mySlides-fade img {
+    position: absolute;
+     width: 100%;
+    height: 400px;
+     object-fit: cover;
+    display: flex;
+    z-index: -1;
+    
+    }
+    
+    .prev, .next {
+      cursor: pointer;
+     position: absolute;
+     top:130px;
+    transform: translateY(100%);
+      padding: 16px;
+      color: white;
+      font-size: 18px;
+      transition: 0.6s ease;
+    
+     
+    }
+    .prev{
+      left: 0;
+    }
+    
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    .container-onclic{
+        background-color: #0084ff;
+        height: 20px;
+    } 
+    
+    /*slider-----------------------------------------------------------------------*/
+ .menu{
+    margin: 20px 0 30px 0; 
+ }
+
+.menu-ul{
+  display: flex;
+justify-content: center;
+font-family: 'ArchyEDT-Bold';
+
+}
+.menu-ul li{
+    list-style-type: none;
+    padding: 10px 10px ;
+    margin: 0 30px 2px 0;
+    cursor: pointer;
+}
+.menu-ul li a{
+    text-decoration: none;
+color: rgb(0, 0, 0);
+
+  
+}
+.menu-ul li:hover{
+    border-bottom: 2px solid green;
+    
+}
+.menu-ul li a:hover{
+   color:red
+} 
+
+     
+    @media screen and (max-width:1090px) {
+        .menu-ul {
+            float: none;
+            display: block;
+            width: 100%;
+            text-align: left;
+            font-size: 16px;
+            background-color: white;
+       
+    
+        }
+     
+     
+    }
+    .menu-damateba{
+        border-bottom: 3px solid green;
+    }    
+    
+
+    .menu-damateba2{
+        background-color: rgb(15, 231, 15);
+    
+    }
+
+
+    
+    /*menu---------------------------------------------------------------------------------------------------------------------------------*/
+    
+    
+    
+    
+    .icon .Tooltip {
+      visibility: hidden;
+       position: relative; 
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        position: absolute;
+        top: 150%;
+       height: 30px;
+        margin-left: -143px;
+        font-size: 15px;
+        margin-top: 2px;
+        width: 150px;
+       
+      }
+      #Tooltip{
+        visibility: hidden;
+        position: relative; 
+         background-color: black;
+         color: #fff;
+         text-align: center;
+         position: absolute;
+         top: 150%;
+        height: 30px;
+         margin-left: -143px;
+         font-size: 15px;
+         margin-top: 2px;
+         width: 150px;
+        
+        
+      }
+      
+    
+    
+      .icon .Tooltip::after {
+        content: "";
+        position: absolute;
+        bottom: 100%;
+        right: 10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent transparent black transparent;
+      }
+      
+    
+      .tolt1:hover .Tooltip {
+        visibility: visible;
+       
+      }
+      .tolt2:hover .Tooltip {
+        visibility: visible;
+       
+      }
+      .tolt3:hover .Tooltip {
+        visibility: visible;
+       
+      }
+      
+    /*window---------------------------------------------------------------------------------------------------------------------------------------*/
+     
+    
+     
+    .registracia {
+      position:fixed;
+       right: 200px;
+       margin-top: 20px;
+       border: 1px solid rgb(209, 204, 204);
+       height: 220px;
+      width:240px;
+      background-color: rgb(255, 255, 255);
+    display: none;
+      box-shadow: 1px 1px 10px 1px rgb(105, 105, 105)  ;
+    
+      }
+      .butoni{
+        position: relative;
+        padding: 18px 60px ;
+       text-align: center;
+       margin: 10px;
+       border-radius:25px ;
+       border: none;
+    cursor: pointer;
+    top:30px;
+    font-size: 16px;
+    background-color: rgb(240, 105, 105);
+      color: #fff;
+    
+      }
+    
+      #registrion{
+        background-color: rgb(51, 218, 0);
+      }
+    .butoni:hover{
+      background-color: rgb(212, 4, 4);
+    
+    }
+    #registrion:hover{
+      background-color: rgb(16, 240, 16);
+    
+    }
+    
+    
+    .registracia:after {
+      content: "";
+      position: absolute;
+      bottom: 100%;
+      right: 10px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent transparent rgb(255, 255, 255) transparent;
+    }
+      .show{
+        display: block;
+      }
+    
+    
+    
+    
+       @media screen and (max-width:1000px) { 
+      .registracia{ 
+     position: relative;
+     position: absolute;
+     right:130px ;
+        }
+        
+      } 
+      
+    /*registrion--------------------------------------------------------------------------------------------------------------------*/
+     .modal{
+       display:none;
+       display: none;
+       position: fixed; 
+       z-index: 1;
+       left: 0;
+       top: 0;
+       width: 100%; 
+       height: 100%; 
+       overflow: auto; 
+       background-color: rgb(0,0,0); 
+       background-color: rgba(0,0,0,0.4); 
+       padding-top: 60px;
+     }
+     .username {
+       position: relative;
+      display: inline-block;
+      border: 1px solid #ccc;
+      background-color: rgb(255, 255, 255);
+      width: 500px;
+      height: 800px;
+     }
+     
+      
+    
+     .logo-registracia{
+       position: relative;
+       font-size: 35px;
+       top:10px;
+     }
+    
+    
+    .facebook-google button{
+      position: relative;
+      top: 50px;
+      width: 300px;
+      height: 40px;
+      margin:5px ;
+     border-radius: 30px;
+     border:none;
+     cursor: pointer;
+     background-color: rgb(247, 57, 57);
+     font-size: 15px;
+     color: white;
+    }
+    
+    #facebook{
+      background-color: rgb(95, 95, 255);
+    }
+    .an{
+      position: relative;
+      top:40px;
+      background-color: rgb(36, 230, 19);
+      border-radius: 50%;
+      text-align: center;
+      width: 40px;
+      font-size: 25px;
+      color: #fff;
+      
+    }
+    
+    
+    .infut{
+      position: relative;
+    display: block;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    margin: px;
+    top: 20px;
+    border-radius: 30px;
+    border:none;
+    border:1px solid rgb(109, 107, 107);
+    outline: none;
+    font-size: 15px;
+      
+    }
+    
+    .radio{
+      position: relative;
+      margin: 5px;
+      top: 45px;
+      cursor: pointer;
+    
+    }
+    
+    .registraciaaa{
+      position: relative;
+      top: 40px;
+      width: 300px;
+      height: 40px;
+      font-size: 17px;
+      border:none;
+      outline: none;
+      background-color: rgb(32, 151, 32);
+      border-radius: 30px;
+      cursor: pointer;
+      color: #fff;
+    }
+    
+    .icon-saxeli i{
+      position: relative;
+    margin-right: 250px;
+      color: black;
+      top: 50px;
+      z-index: 1;
+    
+      
+    }
+    #gamortva-X{
+      position: relative;
+      left: 320px;
+      top:-10px;
+      cursor: pointer;
+    }
+    
+    .vizible{
+    position: absolute;
+    right: -140px;
+    top:462px;
+    
+    }
+    #vizible1{
+      position: relative;
+      top: -55px;
+      margin-left:368px;
+    }
+    
+    
+    /*-------------------------------------------------------------------------------------------------------------*/
+    
+    
+    .modal2{
+    display: none;
+      position: fixed; 
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%; 
+      height: 100%; 
+      overflow: auto; 
+      background-color: rgb(0,0,0); 
+      background-color: rgba(0,0,0,0.4); 
+      padding-top: 60px;
+    
+    
+    }
+    .leibel-avtorizacia{
+      position: relative;
+      font-size: 25px;
+      top: 40px;
+    }
+    #gamortva-X2{
+      position: relative;
+      float:right;
+    right: 10px;
+    cursor: pointer;
+    top:-35px;
+    }
+    
+    .input-2{
+      background-color: #fefefe;
+      margin: 5% auto 15% auto; 
+      border: 1px solid #888;
+      width:400px;
+      height: 400px;
+    }
+    
+    
+    .modal-input input {
+      position: relative;
+      text-align: center;
+      width: 80%;
+      height: 50px;
+    margin:5px ;
+      border: none;
+      outline: none;
+      border: 1px solid rgb(114, 107, 107);
+     border-radius: 30px;
+     top: 40px;
+    
+    }
+    
+    .shesvla{
+      position: relative;
+    margin: 60px;
+      width: 70%;
+      height: 50px;
+      border: none;
+      border-radius: 30px;
+      background-color: rgb(49, 146, 49);
+      font-size: 16px;
+      color: white;
+      cursor: pointer;
+    }
+    
+    .dagaviwyda{
+      position: relative;
+    
+      font-size: 16px;
+      left: 90px;
+    }
+    
+    
+    
+    /*-------
+    ----------------------------------------------------------------------------------------*/
+
+
+
+    .seqcion{
+        position: relative;
+      width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+
+    }
+
+    
+    .img-foto{
+      width: 250px;
+    background-color: white;
+    margin: 5px;
+    transition: 0.5s;
+ border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0px 5px 0px;
+ 
+    }
+    .img-foto:hover{
+        transform: translateY(-10px);
+    }
+    
+    
+    .img-foto1{
+      width: 100%;
+    height: 220px;
+    }
+
+    .label-ganmarteba{
+       display: flex;
+       flex-wrap: wrap;
+       margin: 0 0 15px 10px;
+       font-size: 14px;
+      
+    }
+  
+    .label-fasi{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 0 30px 10px;
+        border-bottom: 2px solid red;
+      display: inline-block;
+    }
+
+    .icon-foto{
+        display: flex;
+        margin-bottom: 10px;
+        justify-content: center;
+        
+    }
+
+#icon-kalata{
+    background-color: #0084ff;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fefefe;
+}
+.iconhover{
+    background-color: rgb(3, 156, 3);
+    padding: 15px;
+    margin: 0 0 0 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+.iconhover:hover{
+    background-color: rgb(5, 219, 5);
+  
+}
+
+.icon-lable{
+    margin: 0 0 0 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+    
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .modalmodal{
+      position: relative;
+    background-color: rgb(255, 255, 255);
+      position: fixed; 
+      z-index: 11;
+      left: 0;
+      top: 0;
+      top:50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%,-50%);
+      width: 80%; 
+      height: 90%; 
+    position: fixed;
+      box-shadow: 1px 1px 10px 1px;
+    overflow: auto;
+display: none;
+    
+    }
+
+#modal-satauri{
+ position: absolute;
+ right: 10px;
+ font-size: 20px;
+ cursor: pointer;
+  
+}
+
+
+
+.section-box{
+  position: relative;
+  width: 100%;
+display: flex;
+flex-wrap: wrap;
+margin: 10px;
+}
+
+
+.section-box-img{
+
+position: relative;
+width: 500px;
+height: 500px;
+
+
+}
+.section-box-img img{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and  (max-width:700px){
+  .section-box-img img{
+    height: 400px;
+  }
+ 
+} 
+
+
+.section-box-ganmarteba{
+position: relative;
+width:500px;
+
+
+}
+
+
+.ganmarteba-lable {
+  
+  margin-bottom: 20px;
+  
+}
+
+
+.ganmarteba-fasi{
+border-bottom:3px solid red;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.ganmarteba-raodenoba{
+  margin-bottom: 20px; 
+}
+.ganmarteba-kalata{
+ 
+  margin-bottom: 20px; 
+  background-color: #0084ff;
+  width: 200px;
+  padding: 10px 10px;
+  text-align: center;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.ganmarteba-kalata:hover{
+  background-color: #4ea9ff;
+}
+
+.ganmarteba-button button{
+  position: absolute;
+  text-decoration: none;
+  border:none;
+width: 200px;
+height: 50px;
+border-radius: 20px;
+font-size: 18px;
+background-color: rgb(16, 190, 16);
+cursor: pointer;
+transition: 0.5s;
+}
+.ganmarteba-button button:hover{
+  background-color: rgb(9, 240, 9);
+}
+
+    /*---------------------------------------------------------------------------------------*/
+     .mesenjeri{
+    position: fixed;
+    display: flex;
+    width: 250px;
+     background-color: red;
+    bottom: 30px;
+      right: -200px; 
+     transition: 1s;
+     background-color: yellow;
+    border-radius: 20px;
+    cursor: pointer;
+    
+     }
+     .mesenjeri-iconi{
+    
+      font-size: 50px;
+    margin-left: 5px;
+        transform: rotateY(145deg) ;
+        color:#0084ff;
+       } 
+    
+      .ategi{
+      padding: 15px;
+        font-size: 20px;
+       margin-left: 15px;
+    
+    
+      }
+      .ategi a{
+        text-decoration: none;
+        color: #0084ff;
+      }
+    
+    
+    
+      .mesenjeri:hover{
+       right: -50px;
+     } 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .chat{
+    
+    position:fixed;
+     width: 270px;
+    right: 8px;
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0px 1px 15px 1px;
+    border-radius: 5px;
+    display: none;
+    bottom: 90px;
+    }
+    .show {display: block;}
+    
+    .chat-heder{
+      width: 100%;
+      height: 50px;
+      background-color: #0084ff;
+      
+    }
+    .chat-satauri{
+    position: relative;
+      display: flex;
+      justify-content: center;
+    top: 15px;
+    color: #fff;
+    font-size: 20px;
+    }
+    
+    .chat-shua{
+      width: 100%;
+      height: 240px;
+      border: 1px solid rgb(255, 255, 255);
+      background-color: white;
+      overflow-y:auto ;
+    }
+    
+    .gamarjoba{
+    
+    padding: 5px;
+    float: left;
+    margin: 5px;
+    content: "";
+    clear: both;
+    display: table;
+    background-color: lightgrey;
+    border-radius:20px ;
+    
+    }
+    .gamarjoba1{
+    
+      padding: 5px;
+      float: right;
+      margin: 5px;
+      content: "";
+      clear: both;
+      display: table;
+      background-color: lightgrey;
+      border-radius:20px ;
+      
+    }
+    
+    
+    
+    #chat-text{
+    position: relative;
+    width: 80%;
+    height: 35px;
+    margin: 10px 0 10px 0px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    
+    
+    }
+    
+    #plane{
+      position: relative;
+      color:  #0084ff;
+    left: 10px;
+    cursor: pointer;
+      font-size: 20px;
+    }
