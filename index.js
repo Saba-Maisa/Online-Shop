@@ -57,6 +57,14 @@ window.onclick = function(event) {
     }
 }
 
+
+
+
+
+
+
+
+
 var modal = document.getElementById('id02');
 
 
