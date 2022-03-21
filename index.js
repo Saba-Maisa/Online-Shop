@@ -1,31 +1,30 @@
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+setTimeout(() => {
+  var ukraina= document.getElementById('ukraina');
+  ukraina.style.display = 'block';
+   
+ }, 4000);
+ 
+ function times(){
+   document.getElementById('ukraina').style.display='none';
+ }
+
+
+
+
+
+let cifri = 1
+
+function plus(){
+  cifri ++
+  maisa.textContent=cifri 
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function minus(){
+  if(cifri > 1)
+  cifri --
+  maisa.textContent=cifri 
 }
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides-fade");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display ="block";  
-  dots[slideIndex-1].className += " active";
-}
-
-
 
 
 
@@ -33,52 +32,26 @@ function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-
-
 function chat() {
   document.getElementById("mychat").classList.toggle("show");
 }
 
 
-
-
-
-
-
-
-
-
 var modal = document.getElementById('id01');
-
-
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
-
-
-
-
-
-
-
-
 
 var modal = document.getElementById('id02');
-
-
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
 }
 
-
-
   var modalmodal = document.getElementById('id03');
-
-
 window.onclick = function(event) {
     if (event.target == modalmodal) {
         modalmodal.style.display = "none";

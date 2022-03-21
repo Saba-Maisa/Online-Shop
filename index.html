@@ -10,7 +10,6 @@
      <link rel="stylesheet" href="css/font.css">
      <link rel="stylesheet" href="css/style.css">
  
-    <script src="index.js"></script>
     <title>grup shop</title>
 </head>
 <body>
@@ -182,11 +181,11 @@
 
 
 </div>
-
-  
-
  </div>
 
+
+
+ <!-- -------------------------------------------------------------------- -->
 
  <div class="slideshow-container">
       
@@ -212,17 +211,24 @@
 <!--slider----------------------------------------------------------------------------------------------------------------------------------->
 
 
+<div class="box-gancxadeba" id="ukraina">
+  
+  <img src="img/ukraina.jpeg" alt="img">
+  <div class="box-times" onclick="times()">&times;</div>
+  <div class="box-gancxadeba2">
+    <h2>slava ukraina</h2>
 
+  </div>
+  <div class="box-h3">
+    <h3>მოგესალმებით, გისურვებთ მშვიდობიან ქვეყანაში ცხოვრებას</h3>
+  </div>
+ 
+
+</div>
       
 
 <!------------------------------------------------------------------------------------------------------------------>
      <div class="charcho">
-
-    
-
-
-
-
 <div class="gancxadeba">
   <h2>ევროპული ავეჯი</h2>
 <span></span>
@@ -295,9 +301,10 @@
    
   </div>
 
-
-
  </section>
+
+
+
 
 
 
@@ -306,6 +313,11 @@
 <span></span>
   <div class="gancxadeba-xazi"> </div>
 </div>
+
+
+<!-- ------------------------------------------------------------------------------------ -->
+
+
 
 
 
@@ -358,7 +370,9 @@
                                             <label > ფასი:350ლ</label>
                                            </div>  
                                             <div class="ganmarteba-raodenoba">
-                                                <span >რაოდენობა:  <input type="number" id="mynumber" value="1" min="1" max="10"></span>
+                                                <span class="momateba" onclick="minus()" >-</span>
+                                                <span id="maisa" >1</span>
+                                                <span class="gamokleba" onclick="plus()" >+</span>
                                             </div>
                                             <div class="ganmarteba-kalata">
                                                 <i id="img-icon" class="fas fa-cart-arrow-down" > კალათა </i>
@@ -515,6 +529,9 @@
 
 </div>     
 <!------------------------------------------------------->
+
+
+
 <hr>
  <div class="footer1">
 
@@ -572,4 +589,9 @@
 
 
 
+
+
 </body>
+<script src="index.js"></script>
+<script src="slide.js"></script>
+</html>
