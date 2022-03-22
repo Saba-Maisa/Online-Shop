@@ -1,4 +1,8 @@
 
+
+
+
+
 setTimeout(() => {
   var ukraina= document.getElementById('ukraina');
   ukraina.style.display = 'block';
@@ -70,5 +74,20 @@ function closeNav() {
 }
 
 
+  
+document.addEventListener('scroll', function (){
+  var scrol = scrollY;
+  console.log(scrol);
 
+  if (scrol > 300 || scrol > 300  ){
+        document.getElementById('top').style.display='block'
+  }else{
+    document.getElementById('top').style.display='none'
+  }
+  
+})
+function topp(){
+  window.scrollTo(0,0);
+  window.scroll(options);
+}
 
