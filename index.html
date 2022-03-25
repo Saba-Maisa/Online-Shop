@@ -14,147 +14,51 @@
 </head>
 <body>
 
-
-
-    <div class="header">
-       <a href="#" class="logo">grup</a>
-       <form class="serch">
-       <input class="sarch1" type="text" placeholder="   ძებნა..." name="search"> 
-        <button class="sarch2" type="submit"><i class="fas fa-search"></i></button>
-
-
-     <div class="icon">  
-    <div class="tolt1">
-    <span  > <i class="fas fa-truck"><span class="Tooltip">მიტანის სერვისი</span> </i></span> 
-     </div>
-      <div class="tolt2">
-    <span >  <i class="fas fa-cart-arrow-down"id="kalata"> <span class="nuli">0</span> <span class="Tooltip">ჩემი კალათა</span></i></span> 
+  <header class="heder" >
    
-    </div>  
 
 
-
-
-
-
-
-
-     <div class="tolt3">   
-     <span  onclick= "myFunction()" class="dropbtn"><i class="fas fa-user"><span class ="Tooltip" >ჩემი პროფილი</span></i>
-    
-    
-    </span>
-      <div class="registracia" id="myDropdown"> 
-       <center> 
-     <h2>რეგისტრაცია</h2>
-     <hr>
-      <span class="butoni" id="registrion" onclick="document.getElementById('id01').style.display='block'">რეგისტრაცია</span>
-      <br>
-      <br>
-      <br>
-     <span class="butoni" id="registrion-2" onclick="document.getElementById('id02').style.display='block'">ავტორიზაცია</span></center> 
-       
-      </div>
-       </div>
-     </div>
-
-<!-----------------------------11111111111---------------------------------------------------------------------------------------------------->
-     <div id="id01" class="modal">
-
-      <div class="username">
-    <label class="logo-registracia" > <span id="gamortva-X" onclick="document.getElementById('id01').style.display='none'">&times;</span> რეგისტრაცია</label>
-<br>
-<div class="facebook-google"> 
-    <button class="google">google-რეგისტრაცია</button>
-    <br>
-    <button id="facebook">facebook-რეგისტრაცია</button>
-  </div>
-    
-  <center> <p class="an">ან</p>
-    <div class="icon-saxeli">
-      <i class="fas fa-user"></i>
-    
-    <input class="infut" type="text" name="user" placeholder="სახელი"  required>
-  </div>
-<div class="icon-saxeli">
-  <i class="fas fa-user"></i>
-     <input class="infut" type="text" name="user" placeholder="გვარი" required>
-    </div>
-    <div class="icon-saxeli">
-      <i class="fas fa-mobile"></i>
-     <input class="infut" type="text" name="user" placeholder="ტელეფონი" required >
-    </div>
-     <div class="icon-saxeli">
-      <i class="fas fa-envelope"></i>
-     <input class="infut"type="email" name="email" placeholder="ელ.ფოსტა" required >
-    </div>
-     <div class="icon-saxeli">
-      <i class="fas fa-lock"></i>
-     <input class="infut"type="password" name="password" placeholder="პაროლი" required  id="password">
-
-    </span>
-    </div>
-     <div class="icon-saxeli">
-      <i class="fas fa-lock"></i>
-     <input class="infut" type="password" name="password" placeholder="პაროლის დამოწმება" required  id="passwordReq">
-     
-    
-     </span>
-    </div>
-   
-    </center> 
-<label class="radio">
-  <input type="radio" name="radio">
-  მამრობითი
-</label>
-<label class="radio">
-  <input type="radio" name="radio">
-  მდედრობითი
-</label>
-<br>
-<br>
-<br>
-<br>
-<br>
-<label class="chechkboc">
- <input type="checkbox" checked="checked" name="checkbox">
- ვეთანხმები <a href="#">წესებს და პირობებს</a>
-</label>
-<br>  
-<button class="registraciaaa">რეგისტრაცია</button>
-
+  
+<div class="logo"><a href="logo">grup</a></div>
+<div class="input">
+  <nav class="navnav">
+    <input type="text" name="serch" placeholder="ძებნა"></infut>
+      <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+  </nav>
 </div>
-</div>
- <!----222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222--> 
-
-  <div id="id02" class="modal2">
-  
-    <div class="input-2"> 
-       <div class="modal-input">
-      <labelv class="leibel-avtorizacia" >  ავტორიზაცია <span id="gamortva-X2" onclick="document.getElementById('id02').style.display='none'">&times;</span></label>
-        
-       
-      <input type="email" placeholder="ელ.ფოსტრა" name="email" >
-      <input type="password" placeholder="პაროლი" name="email">  
- 
-  
-      <br>
-        <button class="shesvla">შესვლა</button>
-        <br>
-         <label class="dagaviwyda"> <a href="#"> დაგავიწყდა პაროლი?</a></label>
-    </div>
-
-  
-    </div>
-
-  
-  </div>
-
-      </form>
-    </div>
-   
+<div class="icon" onclick="icon()"><i class="fa fa-user" aria-hidden="true"></i></div>
+  </header>
+<hr>
   <!-- heder-----------------------------------------------------------------------------------------------------------------------------------------> 
 
+<div class="registracia" id="registracia">
+<h3>რეგისტრაცია</h3>
+<div class="infut-registracia"> 
+  <button type="submit"> რეგისტრაცია <i id="registracia-icon" class="fa fa-long-arrow-right" aria-hidden="true"></i>   </button>
+</div>
+
+<div class="registracia-img">
+  <img src="img/fb.png" alt="img">
+  <img src="img/instagram.png" alt="img">
+  <img src="img/gmail.png" alt="img">
+  <img src="img/twitter.png" alt="img">
+</div>
+
+
+
+
+<hr>
+<h3>ავტორიზაცია</h3>
+
+<div class="infut-avtorizacia">
+  <input type="text" name="text" placeholder="სახრლი - მეილი">
+  <input type="password" name="password" placeholder="პაროლი">
+  <button type="submit">ავტორიზაცია</button>
+</div>
+<a href="##">დაგავიწყდა პაროლი?</a>
+
+</div>
+  <!-- ______________________________________________________ -->
 <dvi class="heder-box">
  <div class="burgeri-menu">
   <span class="burger"onclick="openNav()">&#9776; მენიუ</span>
@@ -219,8 +123,8 @@
     <h2>slava ukraina</h2>
 
   </div>
-  <div class="box-h3">
-    <h3>მოგესალმებით, გისურვებთ მშვიდობიან ქვეყანაში ცხოვრებას</h3>
+  <div class="box-h3" id="mogesalmebit">
+    
   </div>
  
 

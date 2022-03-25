@@ -17,6 +17,7 @@ setTimeout(() => {
 
 
 
+
 let cifri = 1
 
 function plus(){
@@ -41,20 +42,6 @@ function chat() {
 }
 
 
-var modal = document.getElementById('id01');
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-var modal = document.getElementById('id02');
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
   var modalmodal = document.getElementById('id03');
 window.onclick = function(event) {
     if (event.target == modalmodal) {
@@ -74,20 +61,47 @@ function closeNav() {
 }
 
 
-  
+ 
+
+
+
+
 document.addEventListener('scroll', function (){
   var scrol = scrollY;
-  console.log(scrol);
-
-  if (scrol > 300 || scrol > 300  ){
+  if (scrol > 300 ){
         document.getElementById('top').style.display='block'
   }else{
     document.getElementById('top').style.display='none'
-  }
-  
-})
+  } 
+});
 function topp(){
   window.scrollTo(0,0);
-  window.scroll(options);
-}
+};
 
+
+
+
+setTimeout(() => {
+const speed= document.getElementById('mogesalmebit');
+const text = 'მოგესალმებით, გისურვებთ მშვიდობიან ქვეყანაში ცხოვრებას';
+let index=0;
+ const write=() =>{
+   speed.innerHTML=text.slice(0,index);
+   index++;
+   if(index>text.length){
+   
+   }
+   setTimeout(write,100);
+ }
+write();
+}, 4800);
+
+
+function icon(){
+const container=document.getElementById("registracia");
+  if(container.style.display =='block'){
+    container.style.display ='none'
+  }else{
+    container.style.display ='block'
+  }
+}
