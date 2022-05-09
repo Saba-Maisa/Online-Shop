@@ -14,30 +14,31 @@
 </head>
 <body>
 
-  <header class="heder" >
+  <header class="header" >
    
 
 
   
 <div class="logo"><a href="logo">grup</a></div>
-<div class="input">
-  <nav class="navnav">
+<div class="header-serch">
+  <nav class="header-nav">
     <input type="text" name="serch" placeholder="ძებნა"></infut>
       <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
   </nav>
 </div>
-<div class="icon" onclick="icon()"><i class="fa fa-user" aria-hidden="true"></i></div>
+<div class="header-icon" onclick="headerIcon()"><i class="fa fa-user" aria-hidden="true"></i></div>
   </header>
 <hr>
-  <!-- heder-----------------------------------------------------------------------------------------------------------------------------------------> 
+  <!-- header-----------------------------------------------------------------------------------------------------------------------------------------> 
 
-<div class="registracia" id="registracia">
+<div class="registration" id="registration">
 <h3>რეგისტრაცია</h3>
-<div class="infut-registracia"> 
-  <button type="submit"> რეგისტრაცია <i id="registracia-icon" class="fa fa-long-arrow-right" aria-hidden="true"></i>   </button>
+
+<div class="registration-button"> 
+  <a href="index2.html">რეგისტრაცია</a> 
 </div>
 
-<div class="registracia-img">
+<div class="registration-img">
   <img src="img/fb.png" alt="img">
   <img src="img/instagram.png" alt="img">
   <img src="img/gmail.png" alt="img">
@@ -50,30 +51,42 @@
 <hr>
 <h3>ავტორიზაცია</h3>
 
-<div class="infut-avtorizacia">
+<div class="Authorization">
+  <div class="divider"></div>
+  <i id="email-icon" class="fa fa-envelope-o" aria-hidden="true"></i>
   <input type="text" name="text" placeholder="სახრლი - მეილი">
-  <input type="password" name="password" placeholder="პაროლი">
+  <div class="infut-boclomi">
+    <div class="divider2"></div>
+    <i id="lock-icon" class="fa fa-lock" aria-hidden="true"></i>
+    <input type="password" name="password" placeholder="პაროლი">
+    
+
+  </div>
+ 
   <button type="submit">ავტორიზაცია</button>
 </div>
 <a href="##">დაგავიწყდა პაროლი?</a>
 
 </div>
+
+
+
   <!-- ______________________________________________________ -->
-<dvi class="heder-box">
- <div class="burgeri-menu">
+<dvi class="menu-bar">
+ <div class="menu-heder">
   <span class="burger"onclick="openNav()">&#9776; მენიუ</span>
 
-  <div class="menu" id="mySidenav" >
+  <div class="menu" id="mymenu" >
    
     <p class="times" onclick="closeNav()">&times;</p>
     <ul class="menu-ul">
   
-        <li class="menu-damateba"><a href="#"> <i class="fas fa-home"></i>მთავარი</a></li>
+        <li class="activ"><a href="#"> <i class="fas fa-home"></i>მთავარი</a></li>
         <li><a href="#">კატალოგი</a></li>
         <li><a href="#">რბილი ავეჯი</a></li>
         <li><a href="#">მისაღები ავეჯი</a></li>
         <li><a href="#">პუფი</a></li>
-        <li class="menu-damateba2"><a  href="#">შეუკვეთე რაც გსურს</a></li>
+        <li ><a  href="#">შეუკვეთე რაც გსურს</a></li>
     </ul>
     
 </div>
@@ -115,15 +128,15 @@
 <!--slider----------------------------------------------------------------------------------------------------------------------------------->
 
 
-<div class="box-gancxadeba" id="ukraina">
+<div class="application-window" id="application">
   
   <img src="img/ukraina.jpeg" alt="img">
   <div class="box-times" onclick="times()">&times;</div>
-  <div class="box-gancxadeba2">
+  <div class="application2">
     <h2>slava ukraina</h2>
 
   </div>
-  <div class="box-h3" id="mogesalmebit">
+  <div class="application-write" id="write">
     
   </div>
  
@@ -132,19 +145,19 @@
       
 
 <!------------------------------------------------------------------------------------------------------------------>
-     <div class="charcho">
-<div class="gancxadeba">
+     <div class="container">
+<div class="title">
   <h2>ევროპული ავეჯი</h2>
 <span></span>
-  <div class="gancxadeba-xazi"> </div>
+  <div class="dividingline"> </div>
 </div>
 
 
 
  <section>
 
-  <div class="secia-siaxle2">
-    <div class="secia-siaxle3">
+  <div class="european-furniture">
+    <div class="container-furniture">
      
     
       <img class="optika-img" src="img/orsartuliani.jpg" alt="img">
@@ -160,48 +173,51 @@
     </div>
 
 
-    <div class="secia-siaxle3">
-      <img  class="optika-img" src="img/magida.jpg" alt="img">
+    <div class="container-furniture">
+     
+    
+      <img class="optika-img" src="img/magida.jpg" alt="img">
       <div class="optika1">
         <a  href="#5">გადასვლა</a>
       </div>
       <div class="optika-optika">
       
-        <p>  მაგიდა </p>
-        <button href="#5">ყიდვა</button>
-     
-      </div>
-    </div>
-
-
-    <div class="secia-siaxle3">
-      <img  class="optika-img" src="img/televizoris dasadgmeli.jpg" alt="img">
-       <div class="optika1">
-        <a  href="#5">გადასვლა</a>
-      </div>
-      <div class="optika-optika">
-      
-        <p> თაროებიანი ტელევიზორის დასადგმელი</p>
-        <button href="#5">ყიდვა</button>
-     
-      </div>
-    </div>
-
-
-
-    <div class="secia-siaxle3">
-      <img  class="optika-img" src="img/sawoli2.jpg" alt="img">
-       <div class="optika1">
-        <a  href="#5">გადასვლა</a>
-      </div>
-      <div class="optika-optika">
-      
-        <p> თაროებიანი ტელევიზორის დასადგმელი</p>
+        <p> ორ საწოლიანი ევროპული სტილი</p>
         <button href="#5">ყიდვა</button>
      
       </div>
     </div>
     
+    <div class="container-furniture">
+    <img class="optika-img" src="img/televizoris dasadgmeli.jpg" alt="img">
+    <div class="optika1">
+      <a  href="#5">გადასვლა</a>
+    </div>
+    <div class="optika-optika">
+    
+      <p> ორ საწოლიანი ევროპული სტილი</p>
+      <button href="#5">ყიდვა</button>
+   
+    </div>
+  </div>
+
+  <div class="container-furniture">
+  <img class="optika-img" src="img/sawoli2.jpg" alt="img">
+  <div class="optika1">
+    <a  href="#5">გადასვლა</a>
+  </div>
+  <div class="optika-optika">
+  
+    <p> ორ საწოლიანი ევროპული სტილი</p>
+    <button href="#5">ყიდვა</button>
+ 
+  </div>
+</div>
+
+
+
+
+
    
   </div>
 
@@ -212,10 +228,10 @@
 
 
 
- <div class="gancxadeba">
+ <div class="title">
   <h2> საქართველოში დამზადებული ავეჯი</h2>
 <span></span>
-  <div class="gancxadeba-xazi"> </div>
+  <div class="dividingline"> </div>
 </div>
 
 
@@ -228,180 +244,163 @@
  <div class="seqcion">
 
 
-<div class="saocreba">
 
 
 
-    <div class="img-foto">
-               <img class="img-foto1"  src="img/2.jpg"  >
-                            <div class="label-ganmarteba">
-                                <label> მრგვალი მაგიდა სკამებიც მოყვება მაღალი ხარისხის </label>
-                            </div>
-                <div class="label-fasi">
-                    <label> ფასი: 350ლ  </label>
-                </div>
-                        <div class="icon-foto " onclick="document.getElementById('id03').style.display='block'">
-                          <i  id="icon-kalata"  class="fas fa-cart-plus"></i>
-                          <div class="iconhover" >
-                            <i class="far fa-eye" > </i>
-                                <label class="icon-lable"> დათვალიერება</label>  
-                           </div>
-                        </div>
-                    </div>
 
-                        <header>
-                            <div  id="id03" class="modalmodal">
-                                <div class="section-header">
-                                   
-                                    <span id="modal-satauri" onclick="document.getElementById('id03').style.display='none'">&times;</span>
-                                    <label class="gamortva-Xx" > პროდუქტების სწრაფი დათვალიერება </label>
-                                <hr>
-                                </div>
-                                <section>
-                                    <div class="section-box">
+    <div class="georgia-furniture">
+
+           <img src="img/2.jpg"  >
+    <div class="label-text">
+            <label> მრგვალი მაგიდა სკამებიც მოყვება მაღალი ხარისხის </label>
+    </div>
+   <div class="label-cost">
+            <label> ფასი: 350ლ  </label>
+   </div>
+    <div class="icon-icon" onclick="document.getElementById('id03').style.display='block'">
+             <i  id="chart-icon"  class="fas fa-cart-plus"></i>
+   <div class="iconhover" onclick="modal()">
+             <i class="far fa-eye" > </i>
+            <label class="icon-lable"> დათვალიერება</label>  
+      </div>
+    </div>
+   </div>
+
+   
+   <div class="georgia-furniture">
+
+    <img src="img/2.jpg"  >
+<div class="label-text">
+     <label> მრგვალი მაგიდა სკამებიც მოყვება მაღალი ხარისხის </label>
+</div>
+<div class="label-cost">
+     <label> ფასი: 350ლ  </label>
+</div>
+<div class="icon-icon" onclick="document.getElementById('id03').style.display='block'">
+      <i  id="chart-icon"  class="fas fa-cart-plus"></i>
+<div class="iconhover" onclick="modal()" >
+      <i class="far fa-eye" > </i>
+     <label class="icon-lable"> დათვალიერება</label>  
+</div>
+</div>
+</div>
+
+
+<div class="georgia-furniture">
+
+  <img src="img/karada.jpg"  >
+<div class="label-text">
+   <label> მრგვალი მაგიდა სკამებიც მოყვება მაღალი ხარისხის </label>
+</div>
+<div class="label-cost">
+   <label> ფასი: 350ლ  </label>
+</div>
+<div class="icon-icon" onclick="document.getElementById('id03').style.display='block'">
+    <i  id="chart-icon"  class="fas fa-cart-plus"></i>
+<div class="iconhover" onclick="modal()" >
+    <i class="far fa-eye" > </i>
+   <label class="icon-lable"> დათვალიერება</label>  
+</div>
+</div>
+</div>
+
+
+<div class="georgia-furniture">
+
+  <img src="img/mdivani.jpg"  >
+<div class="label-text">
+   <label> მრგვალი მაგიდა სკამებიც მოყვება მაღალი ხარისხის </label>
+</div>
+<div class="label-cost">
+   <label> ფასი: 350ლ  </label>
+</div>
+<div class="icon-icon" onclick="document.getElementById('id03').style.display='block'">
+    <i  id="chart-icon"  class="fas fa-cart-plus"></i>
+<div class="iconhover" onclick="modal()">
+    <i class="far fa-eye" > </i>
+   <label class="icon-lable"> დათვალიერება</label>  
+</div>
+</div>
+</div>
+
+
+<div class="georgia-furniture">
+
+  <img src=" img/1.jpg"  >
+<div class="label-text">
+   <label> მრგვალი მაგიდა სკამებიც მოყვება მაღალი ხარისხის </label>
+</div>
+<div class="label-cost">
+   <label> ფასი: 350ლ  </label>
+</div>
+<div class="icon-icon">
+    <i  id="chart-icon"  class="fas fa-cart-plus"></i>
+<div class="iconhover" onclick="modal()" >
+    <i class="far fa-eye" > </i>
+   <label class="icon-lable" > დათვალიერება</label>  
+</div>
+</div>
+</div>
+
+
+
+
+
+
+    <div  id="modal" class="modalmodal">
+                              
+  <span id="header-title" onclick="modal2()" >
+    &times;</span><label id="times-x" > პროდუქტების სწრაფი დათვალიერება </label>
+<hr>
+
+
+
+
+ <div class="modal-section">
                         
-                                        <div class="section-box-img">
-                                                   <img src="img/2.jpg" alt="img">
-                                        </div>
+ <div class="modal-img">
+    <img src="img/2.jpg" alt="img">
+ </div>
                         
                         
                         
-                                        <div class="section-box-ganmarteba">
-                                            <div class="ganmarteba-lable">
-                                            <label>ღია თაროებიანი კარგადა:სიმაღლე-180სმ, სიგანე-150სმ, სიღრმე-50სმ;მასალა:სონომო;</label>
-                                            </div>
-                                           <div class="ganmarteba-fasi">
-                                            <label > ფასი:350ლ</label>
-                                           </div>  
-                                            <div class="ganmarteba-raodenoba">
-                                                <span class="momateba" onclick="minus()" >-</span>
-                                                <span id="maisa" >1</span>
-                                                <span class="gamokleba" onclick="plus()" >+</span>
-                                            </div>
-                                            <div class="ganmarteba-kalata">
-                                                <i id="img-icon" class="fas fa-cart-arrow-down" > კალათა </i>
+  <div class="modal-section-box">
+<div class="ganmarteba-lable">
+   <label>ღია თაროებიანი კარგადა:სიმაღლე-180სმ, სიგანე-150სმ, სიღრმე-50სმ;მასალა:სონომო;</label>
+ </div>
+<div class="modal-price">
+  <label > ფასი:350ლ</label>
+ </div>  
+<div class="modal-quantity">
+  <span class="minus" onclick="minus()" >-</span>
+   <span id="zerp" >1</span>
+<span class="plus" onclick="plus()" >+</span>
+  </div>
+ <div class="modal-chart">
+  <i id="img-icon" class="fas fa-cart-arrow-down" > კალათა </i>
                         
-                                            </div>
-                        <div class="ganmarteba-button">
-                            <button > სწრაფი ყიდვა</button>
-                        </div>
-                        
-                        
-                                        </div>
-                        
-                        
-                                    </div>
-                                </section>
-                        
-                        
-                            </div>
-                        
-                        
-                        </header>
-                        
-
-
-
-                    </div>
-
-
-                    
-    <div class="img-foto">
-        <img class="img-foto1"  src="img/karada.jpg"  >
-                     <div class="label-ganmarteba">
-                         <label> წიგნის კარადა </label>
-                     </div>
-         <div class="label-fasi">
-             <label> ფასი: 350ლ  </label>
-         </div>
-                 <div class="icon-foto " onclick="document.getElementById('id03').style.display='block'">
-                   <i  id="icon-kalata"  class="fas fa-cart-plus"></i>
-                   <div class="iconhover" >
-                     <i class="far fa-eye" > </i>
-                         <label class="icon-lable"> დათვალიერება</label>  
-                    </div>
-                 </div>
-             </div>
-
-
-             
-    <div class="img-foto">
-        <img class="img-foto1"  src="img/2.jpg"  >
-                     <div class="label-ganmarteba">
-                         <label> წიგნის კარადა </label>
-                     </div>
-         <div class="label-fasi">
-             <label> ფასი: 350ლ  </label>
-         </div>
-                 <div class="icon-foto " onclick="document.getElementById('id03').style.display='block'">
-                   <i  id="icon-kalata"  class="fas fa-cart-plus"></i>
-                   <div class="iconhover" >
-                     <i class="far fa-eye" > </i>
-                         <label class="icon-lable"> დათვალიერება</label>  
-                    </div>
-                 </div>
-             </div>
-
-             
-    <div class="img-foto">
-        <img class="img-foto1"  src="img/mdivani.jpg"  >
-                     <div class="label-ganmarteba">
-                         <label> წიგნის კარადა </label>
-                     </div>
-         <div class="label-fasi">
-             <label> ფასი: 350ლ  </label>
-         </div>
-                 <div class="icon-foto " onclick="document.getElementById('id03').style.display='block'">
-                   <i  id="icon-kalata"  class="fas fa-cart-plus"></i>
-                   <div class="iconhover" >
-                     <i class="far fa-eye" > </i>
-                         <label class="icon-lable"> დათვალიერება</label>  
-                    </div>
-                 </div>
-             </div>
-
-
-             
-    <div class="img-foto">
-        <img class="img-foto1"  src="img/1.jpg"  >
-                     <div class="label-ganmarteba">
-                         <label> წიგნის კარადა </label>
-                     </div>
-         <div class="label-fasi">
-             <label> ფასი: 350ლ  </label>
-         </div>
-                 <div class="icon-foto " onclick="document.getElementById('id03').style.display='block'">
-                   <i  id="icon-kalata"  class="fas fa-cart-plus"></i>
-                   <div class="iconhover" >
-                     <i class="far fa-eye" > </i>
-                         <label class="icon-lable"> დათვალიერება</label>  
-                    </div>
-                 </div>
-             </div>
-         
-         
+</div>
+<div class="modal-button">
+     <button > სწრაფი ყიდვა</button>
+</div>
+ </div>
+ </div>
+ </div>
+</div> 
 
 
 
 
-            </div>
+<!-- messenger====================================================-->
 
 
-          </div> 
+<div class="messenger"  onclick="chat()">
 
-
-
-
-<!--fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff-->
-
-
-<div class="mesenjeri"  onclick="chat()">
-
-<div class="mesenjeri-iconi">
-  <i id="mesenjeri-icon"  class="fa fa-commenting-o" aria-hidden="true"></i>
+<div class="messenger-icon">
+  <i id="messenger-icon"  class="fa fa-commenting-o" aria-hidden="true"></i>
  
    </div>
-   <div class="ategi">
+   <div class="link-span">
     <a href="#1"  > <span  class="mesenjeri-saxeli">Messanger</span> </a>
    </div>
 
@@ -412,19 +411,19 @@
 
 
   <div class="chat-heder" >
-    <span class="chat-satauri">chat</span>
+    <span class="chat-span">chat</span>
   </div>
 
-  <div class="chat-shua">
- <div class="gamarjoba">გამარჯობა</div>   <div class="gamarjoba1">გამარჯობა</div>
-  <div class="gamarjoba1">მოგესალმებათ გრუპ.ჯი</div>
- <div class="gamarjoba">!</div>   <div class="gamarjoba1">!</div>
- <div class="gamarjoba">!</div>   <div class="gamarjoba1">!</div>
- <div class="gamarjoba">!</div>   <div class="gamarjoba1">!</div>
+  <div class="section-chat">
+ <div class="write-chat">გამარჯობა</div>   <div class="write-chat2">გამარჯობა</div>
+  <div class="write-chat2">მოგესალმებათ გრუპ.ჯი</div>
+ <div class="write-chat">!</div>   <div class="write-chat2">!</div>
+ <div class="write-chat">!</div>   <div class="write-chat2">!</div>
+ <div class="write-chat">!</div>   <div class="write-chat2">!</div>
  
   </div>
 
-  <div class="chat-dziri">
+  <div class="chat-footer">
     <form >
       <input type="text " id="chat-text" name="text" placeholder="   ტექსტი"> <span ><i id="plane" class="fa fa-paper-plane" aria-hidden="true"></i></span>
     </form>
@@ -432,38 +431,32 @@
 
 
 </div>     
-<!------------------------------------------------------->
+<!----------------------scrol--------------------------------->
 
 
 
 <div class="scrol-top" id="top" onclick="topp()">
   <i class="fa fa-sort-asc" aria-hidden="true"></i>
 </div>
-
-
-
-
-
-
-
+<!-- ------------footer---------------------------------------------------------------------------------------- -->
 <hr>
- <div class="footer1">
+ <div class="footer-first">
 
    <div class="footer-img">
     <img src="img/rukaa.jpg" alt="img">
   
 
   
-    <div class="carieli">
-      <p class="footer-paragrafi">ჩვენი მისამართი:</p>
+    <div class="footer-box">
+      <p class="footer-address">ჩვენი მისამართი:</p>
       <a href="https://www.google.com/maps/dir/41.6673482,44.9157924//@41.6680286,44.9147652,17.43z/data=!4m5!4m4!1m1!4e1!1m0!3e3" class="location">location</a>
-      <a href="##" class="footer-paragrafi1">კურიერის მომსახურება საქართველოს მაშტაბით</a>
+      <a href="##" class="footer-address1">კურიერის მომსახურება საქართველოს მაშტაბით</a>
   
     </div>
  
   </div> 
-            <div class="footer2">
-            <div class="footer3">
+            <div class="footer-second">
+            <div class="footer-third">
           <ul class="footer-ul">
             <h4>ჩემი ანგარიში</h4>
             <li><a href="#11">ავტორიზაცია</a></li>
@@ -473,7 +466,7 @@
           </ul>
             </div>
             
-            <div class="footer3">
+            <div class="footer-third">
               <ul class="footer-ul">
                 <h4>პირპბები</h4>
                 <li><a href="#11">ზოგადი პირობები</a></li>
@@ -482,7 +475,7 @@
                 <li><a href="#11">ინსტრუქცია</a></li>
               </ul>
                 </div>
-                <div class="footer3">
+                <div class="footer-third">
                   <ul class="footer-ul">
                     <h4>კონტაქტი</h4>
                     <li><a href="#11">ონლაინ მაღაზია</a></li>
@@ -493,17 +486,7 @@
                     </div>
                   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
 </body>
-<script src="index.js"></script>
-<script src="slide.js"></script>
+<script src="js/index.js"></script>
+<script src="js/slide.js"></script>
 </html>

@@ -11,7 +11,7 @@
     }
     
 
-.heder{
+.header{
 
 position: sticky;
 z-index: 10;
@@ -38,7 +38,7 @@ padding: 5px;
 
  
 }
- .input [type="text"] {
+ .header-serch [type="text"] {
 
 height: 40px;
  width: 400px;
@@ -49,7 +49,7 @@ height: 40px;
  border: 1px solid rgb(238, 238, 238);
  }
 
- .input [type="submit"]{
+ .header-serch [type="submit"]{
    height: 40px;
    width: 50px;
    border: none;
@@ -62,7 +62,7 @@ height: 40px;
  }
 
 
-.icon{
+.header-icon{
   
 border: 1px solid rgb(155, 155, 155);
 padding: 6px 7px;
@@ -70,92 +70,80 @@ border-radius: 50%;
 cursor: pointer;
 background-color: white;
 }
-.icon:hover{
+.header-icon:hover{
   box-shadow: 0 0 2px 0 ;
 }
 
-.navnav{
+.header-nav{
   box-shadow: 0 0 10px 0 rgb(212, 209, 209);
   border-radius: 25px;
 }
-   .navnav:active{
+   .header-nav:active{
      box-shadow: 0 0 6px 0  rgb(255, 230, 0);
      border-radius: 25px;
    }
 
 
 @media screen and ( max-width: 700px) {
-  .heder{
+  .header{
     padding: 10px ;
   }
   .logo a{
     font-size: 20px;
   
   }
-  .input [type="text"]{
+  .header-serch [type="text"]{
     width: 150px;
   }
 }
 
-
-
-
       /* hederi -------------------------------------------------------------------------------------------------------------------------------*/
      
-     .registracia{
+
+      
+     .registration{
        position: fixed;
        width: 300px;
 font-size: 18px;
        z-index: 5;
        right: 10px;
        background-color: #ffbb2a;
-       display: none;
+  display: none;
+
      }
+
+
+    
      
-     .registracia h3 {
+     .registration h3 {
       text-align: center;
       margin: 10px 0 30px 0;
 
      }
-.infut-registracia{
-  position: relative;
-  text-align: center;
-  margin-bottom:30px ;
-  width:100% ;
- 
+.registration-button {
+  display: flex;
+  justify-content: center;
+width: 100%;
+margin-bottom: 20px;
 }
-.infut-registracia button{
-  width: 60%;
-  height: 40px;
-  border: none;
+.registration-button a{
+  background-color: #dd4b39;
+  padding: 10px 70px;
   border-radius: 25px;
-  background-color: #ffffff;
-  font-size: 16px;
-  display: inline-block;
-  padding: 0 0 1px;
-  cursor: pointer;
-  box-shadow: 0 0 10px 0;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
 }
-.infut-registracia button:hover{
-  background-color: #f7d4d4;
-}
-.infut-registracia button:active{
-  transform: translateX(1px);
+.registration-button a:hover{
+  background-color: rgb(218, 5, 5);
 }
 
-#registracia-icon{
-margin: 0 0 0 25px;
-align-items: center;
-  z-index: 1;
-
-
-}
-.registracia-img{
+.registration-img{
   text-align: center;
   margin-bottom: 10px;
 }
 
- .registracia-img img{
+ .registration-img img{
    width: 40px;
    height: 40px;
    cursor: pointer;
@@ -163,30 +151,58 @@ align-items: center;
  }
 
 
+ .divider{
+   height: 25px;
+   width: 1px;
+background-color: rgb(179, 177, 177);
+   position: absolute;
+    margin:7px 0 0 70px;
+ }
+
+ .divider2{
+  height: 25px;
+  width: 1px;
+background-color: rgb(172, 172, 172);
+  position: absolute;
+   margin:7px 0 0 70px;
+}
 
 
+#email-icon{
+  position: absolute;
+  margin: 12px 0 0 15px;
+  color: rgb(87, 87, 87);
+  font-size: 14px;
+}
+
+#lock-icon{
+  position: absolute;
+  margin: 12px 0 0 15px;
+  color: rgb(87, 87, 87);
+  font-size: 14px;
+}
 
 
-
-.infut-avtorizacia{
-  margin-bottom: 20px;
+.Authorization{
+  margin-bottom: 25px;
   width: 100%;
   text-align: center;
 
   
 }
-.infut-avtorizacia input{
-padding: 0 0 0 5px;
+.Authorization input{
+padding: 0 0 0 55px;
  width: 80%;
-margin: 0 0 5px ;
+margin: 0 0 7px ;
 height: 40px;
 outline: none;
 border: none;
 border-radius: 25px;
 box-shadow: 0 0 5px 0 ;
+
 }
 
-.infut-avtorizacia button{
+.Authorization button{
   width: 80%;
   outline: none;
 border: none;
@@ -198,10 +214,10 @@ cursor: pointer;
 font-size: 16px;
 box-shadow: 0 0 5px 0 ;
 }
-.infut-avtorizacia button:hover{
+.Authorization button:hover{
   background-color: #ffbb2a;
 }
-.registracia a{
+.registration a{
 float: right;
 margin: 5px 10px 10px;
 font-size: 15px;
@@ -278,8 +294,8 @@ font-size: 15px;
         height: 20px;
     } 
     
-    /*slider-----------------------------------------------------------------------*/
-.heder-box{
+    /* menu-bar-----------------------------------------------------------------------*/
+.menu-bar{
   position: relative;
   display: flex;
 width: 100%;
@@ -291,7 +307,7 @@ width: 100%;
 
 
 
-.burgeri-menu{
+.menu-heder{
   position: relative;
  border:  1px solid rgb(212, 210, 210);
   width: 25%;
@@ -348,15 +364,6 @@ border-radius: 20px;
  color: rgb(255, 115, 0);
 } 
 
-     
-
-    .menu-damateba{
-        border-bottom: 3px solid green;
-    }    
-    
-
-
-
 .times{
   float: right;
   font-size: 30px;
@@ -368,7 +375,7 @@ display: none;
  
 @media screen and (max-width:850px) {
   
-.burgeri-menu{
+.menu-heder{
 width: 15%;
 border: none;
 
@@ -397,7 +404,7 @@ width: 250px;
 /* box-gancxadeba------------------------------------------------------- */
 
   
-.box-gancxadeba{
+.application-window{
   position: relative;
   width: 600px;
   height: 300px;
@@ -411,7 +418,7 @@ display: none;
 box-shadow: 0 0 20px 0;
 }
 
-.box-gancxadeba img{
+.application-window img{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -429,18 +436,18 @@ cursor: pointer;
 }
 
 
-.box-gancxadeba2{
+.application2{
   display: flex;
   position:absolute;
 }
 
- .box-gancxadeba h2{
+ .application2 h2{
 display: flex;
   color: white;
   padding: 5px;
 }
 
-#mogesalmebit{
+#write{
   position: absolute;
   bottom: 20px;
   color: rgb(252, 252, 252);
@@ -450,31 +457,31 @@ display: flex;
 
 
 @media screen and (max-width:700px) {
-  .box-gancxadeba{
+  .application-window{
     width: 90%;
     height: 200px;
   }
-  .box-gancxadeba h2{
+.application-window h2{
     font-size: 16px;
   }
-  .box-h3{
+  .application-write{
     font-size: 12px;
   }
 }
-    /*menu---------------------------------------------------------------------------------------------------------------------------------*/
+    /*- european furniture-------------------------------------------------------------------------------------------------------------------------------*/
  
     
 
 
 
-.charcho{
+.container{
  border: 1px solid rgb(221, 218, 212);
   max-width: 1500px;
   margin: 0 auto;
 }
 
 
-.gancxadeba{
+.title{
   display: flex;
   align-items: center ;
   margin: 0  20px 15px;
@@ -482,10 +489,10 @@ display: flex;
 }
 
 
-.gancxadeba h2{
+.title h2{
   font-family: 'ArchyEDT-Bold';
 }
-.gancxadeba-xazi{
+.dividingline{
   
 border: 2px solid rgb(230, 80, 80);
 flex:  1 ;
@@ -497,8 +504,7 @@ background-color: rgb(230, 80, 80);;
 
 
 
-
-.secia-siaxle2{
+.european-furniture{
 
 display: flex;
 flex-wrap: wrap;
@@ -508,7 +514,7 @@ margin-bottom: 30px;
 
 
 
-.secia-siaxle3{
+.container-furniture{
 position: relative;
 background-color: black;
  margin: 0 20px 5px;
@@ -516,7 +522,7 @@ background-color: black;
   
 }
 
-.secia-siaxle3 img{
+.container-furniture img{
   opacity: 1;
   width: 280px;
   height: 100%;
@@ -543,11 +549,11 @@ border-radius: 20px;
   color: white;
 }
 
-.secia-siaxle3:hover .optika-img{
+.container-furniture:hover .optika-img{
   opacity: 0.3;
 }
 
-.secia-siaxle3:hover .optika1{
+.container-furniture:hover .optika1{
   opacity: 1;
 
 }
@@ -584,7 +590,7 @@ border-radius: 20px;
  background-color:rgb(185, 185, 0);
 }
 
-.secia-siaxle3:hover .optika-optika{
+.container-furniture:hover .optika-optika{
   opacity: 1;
 
 }
@@ -592,12 +598,17 @@ border-radius: 20px;
 @media screen and (max-width:400px) {
 
 
-  .secia-siaxle3 img{
+  .container-furniture img{
     width: 250px;
    
   }
   
 }
+
+
+
+
+
     /*-------
     ----------------------------------------------------------------------------------------*/
 
@@ -614,7 +625,7 @@ border-radius: 20px;
     }
 
     
-    .img-foto{
+    .georgia-furniture{
       width: 250px;
     background-color: white;
     margin: 5px;
@@ -623,17 +634,17 @@ border-radius: 20px;
   box-shadow: 0 0px 5px 0px;
  
     }
-    .img-foto:hover{
+    .georgia-furniture:hover{
         transform: translateY(-10px);
     }
     
     
-    .img-foto1{
+    .georgia-furniture img{
       width: 100%;
     height: 220px;
     }
 
-    .label-ganmarteba{
+    .label-text{
        display: flex;
        flex-wrap: wrap;
        margin: 0 0 15px 10px;
@@ -641,7 +652,7 @@ border-radius: 20px;
       
     }
   
-    .label-fasi{
+    .label-cost{
         display: flex;
         flex-wrap: wrap;
         margin: 0 0 30px 10px;
@@ -649,14 +660,14 @@ border-radius: 20px;
       display: inline-block;
     }
 
-    .icon-foto{
+    .icon-icon{
         display: flex;
         margin-bottom: 10px;
         justify-content: center;
         
     }
 
-#icon-kalata{
+#chart-icon{
     background-color: #0084ff;
     padding: 15px;
     border-radius: 50%;
@@ -710,7 +721,7 @@ display: none;
     
     }
 
-#modal-satauri{
+#header-title{
  position: absolute;
  right: 10px;
  font-size: 20px;
@@ -720,7 +731,7 @@ display: none;
 
 
 
-.section-box{
+.modal-section{
   position: relative;
   width: 100%;
 display: flex;
@@ -729,7 +740,7 @@ margin: 10px;
 }
 
 
-.section-box-img{
+.modal-img{
 
 position: relative;
 width: 500px;
@@ -737,21 +748,21 @@ height: 500px;
 
 
 }
-.section-box-img img{
+.modal-img img{
   position:absolute;
   width: 100%;
   height: 100%;
 }
 
 @media screen and  (max-width:700px){
-  .section-box-img img{
+  .modal-img img{
     height: 400px;
   }
  
 } 
 
 
-.section-box-ganmarteba{
+.modal-section-box{
 position: relative;
 width:500px;
 
@@ -759,14 +770,14 @@ width:500px;
 }
 
 
-.ganmarteba-lable {
+.title-lable {
   
   margin-bottom: 20px;
   
 }
 
 
-.ganmarteba-fasi{
+.modal-price{
 border-bottom:3px solid red;
   margin-bottom: 20px;
   display: inline-block;
@@ -774,7 +785,7 @@ border-bottom:3px solid red;
 
 
 
-.ganmarteba-raodenoba{
+.modal-quantity{
  background-color: rgb(241, 234, 234);
  height: 30px;
  width: 150px;
@@ -788,17 +799,17 @@ font-size: 20px;
 
 }
 
-.ganmarteba-raodenoba span{
+.modal-quantity span{
   width: 100%;
   text-align: center;
  
 }
-.ganmarteba-raodenoba .momateba{
+.modal-quantity .minus{
   border-right: 1px solid rgb(80, 80, 80);
   font-size: 20px;
   cursor: pointer;
 }
-.ganmarteba-raodenoba .gamokleba{
+.modal-quantity .plus{
   border-left: 1px solid rgb(80, 80, 80);;
   font-size: 20px;
   cursor: pointer;
@@ -807,7 +818,7 @@ font-size: 20px;
 
 
 
-.ganmarteba-kalata{
+.modal-chart{
  
   margin-bottom: 20px; 
   background-color: #0084ff;
@@ -818,11 +829,11 @@ font-size: 20px;
   cursor: pointer;
   transition: 0.5s;
 }
-.ganmarteba-kalata:hover{
+.modal-chart:hover{
   background-color: #4ea9ff;
 }
 
-.ganmarteba-button button{
+.modal-button button{
   position: absolute;
   text-decoration: none;
   border:none;
@@ -834,12 +845,12 @@ background-color: rgb(16, 190, 16);
 cursor: pointer;
 transition: 0.5s;
 }
-.ganmarteba-button button:hover{
+.modal-button button:hover{
   background-color: rgb(9, 240, 9);
 }
 
     /*---------------------------------------------------------------------------------------*/
-     .mesenjeri{
+     .messenger{
     position: fixed;
     display: flex;
     width: 250px;
@@ -850,9 +861,9 @@ transition: 0.5s;
      background-color: yellow;
     border-radius: 30px;
     cursor: pointer;
-    
+    z-index: 1;
      }
-     .mesenjeri-iconi{
+     .messenger-icon{
     
       font-size: 50px;
     margin-left: 5px;
@@ -860,34 +871,27 @@ transition: 0.5s;
         color:#0084ff;
        } 
     
-      .ategi{
+      .link-span{
       padding: 15px;
         font-size: 20px;
        margin-left: 15px;
     
     
       }
-      .ategi a{
+      .link-span a{
         text-decoration: none;
         color: #0084ff;
       }
     
     
     
-      .mesenjeri:hover{
+      .messenger:hover{
        right: -50px;
      } 
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
+     
     
     .chat{
     
@@ -908,7 +912,7 @@ transition: 0.5s;
       background-color: #0084ff;
       
     }
-    .chat-satauri{
+    .chat-span{
     position: relative;
       display: flex;
       justify-content: center;
@@ -917,7 +921,7 @@ transition: 0.5s;
     font-size: 20px;
     }
     
-    .chat-shua{
+    .section-chat{
       width: 100%;
       height: 240px;
       border: 1px solid rgb(255, 255, 255);
@@ -925,7 +929,7 @@ transition: 0.5s;
       overflow-y:auto ;
     }
     
-    .gamarjoba{
+    .write-chat{
     
     padding: 5px;
     float: left;
@@ -933,11 +937,11 @@ transition: 0.5s;
     content: "";
     clear: both;
     display: table;
-    background-color: lightgrey;
+    background-color: rgb(219, 219, 219);
     border-radius:20px ;
     
     }
-    .gamarjoba1{
+    .write-chat2{
     
       padding: 5px;
       float: right;
@@ -961,7 +965,7 @@ transition: 0.5s;
     border: none;
     outline: none;
     border-radius: 25px;
-    
+    padding: 0 0 0 10px;
     
     }
     
@@ -972,12 +976,36 @@ transition: 0.5s;
     cursor: pointer;
       font-size: 20px;
     }
+/* --------------------------------- */
+
+.scrol-top{
+
+  width: 50px;
+  height: 50px;
+  background-color: #0084ff;
+position:fixed;
+bottom: 10px;
+right: 1px;
+border-radius: 50%;
+display: none;
+cursor: pointer;
+
+}
+.scrol-top i{
+ font-size: 50px;
+padding: 9px;
+color: white;
+
+
+
+}
+
 
     /* footer----------------------------------- */
 
 
 
- .footer1{ 
+ .footer-first{ 
   background-color: rgb(0,0,0,0.4);
 
   display: flex;
@@ -986,7 +1014,7 @@ transition: 0.5s;
 }
 
 
-.footer2{
+.footer-second{
   
 width:70%;
 display: flex;
@@ -997,7 +1025,7 @@ justify-content: center;
 
 
 
-.footer3{
+.footer-third{
   margin: 0 10px;
   display: flex;
   flex-wrap: wrap;
@@ -1005,7 +1033,7 @@ justify-content: center;
 
  
 } 
-.footer3 h4{
+.footer-third h4{
   border-bottom: 3px solid rgb(207, 45, 45);
   margin-bottom: 10px;
   display: inline-block;
@@ -1050,7 +1078,7 @@ border-radius: 20px;
 
 }
 
-.carieli{
+.footer-box{
   margin: 10px 0 10px 0;
   background-color: rgb(0,0,0,0.2);
   width: 300px;
@@ -1060,13 +1088,13 @@ border-radius: 20px;
  display: inline-block;
 } 
 
-.footer-paragrafi{
+.footer-address{
   position: absolute;
  margin: 10px 0 0 20px;
  color: white;
  display: inline-block;
 }
-.footer-paragrafi1{
+.footer-address1{
   text-align: center;
   position: absolute;
 color:white;
@@ -1095,14 +1123,14 @@ margin: 8px 60px 0;
 
 
  @media screen and (max-width:1120px) {
-  .footer1{
+  .footer-first{
 display: block;
     
   }
-  .footer2{
+  .footer-img{
     width: 100%;
   }
-  .footer-img{
+  .footer-third{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -1112,29 +1140,9 @@ display: block;
  @media screen and (max-width:300px){
   .footer-img img{
     width: 100%;
+
   }
 } 
 
 
 
-.scrol-top{
-
-  width: 50px;
-  height: 50px;
-  background-color: #0084ff;
-position:fixed;
-bottom: 10px;
-right: 1px;
-border-radius: 50%;
-display: none;
-cursor: pointer;
-
-}
-.scrol-top i{
- font-size: 50px;
-padding: 9px;
-color: white;
-
-
-
-}
