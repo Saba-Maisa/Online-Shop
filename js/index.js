@@ -8,7 +8,6 @@ function headerIcon(){
   }
 
 
-
 setTimeout(() => {
   var text = document.getElementById('application');
   text.style.display = 'block';
@@ -69,10 +68,6 @@ function closeNav() {
 
 
  
-
-
-
-
 document.addEventListener('scroll', function (){
   var scrol = scrollY;
   if (scrol > 300 ){

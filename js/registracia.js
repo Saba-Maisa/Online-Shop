@@ -41,29 +41,6 @@ document.getElementById('myfunction').onclick = function(){
       email.style.border = '1px solid green'
     }
   
-    // if(password.value.length === 0){
-    //   errorPassword.style.display='block';
-    // errorPassword.style.color= 'red'
-    //   password.style.border = '1px solid red'
-    // }else{
-    //   errorPassword.style.display='none';
-    
-    // }
-  
-
-    // if(certificationPassword.value.length === 0){
-    //   errorPassword2.style.display='block';
-    // errorPassword2.style.color= 'red'
-    // certificationPassword.style.border = '1px solid red'
-    // }else{
-    //   errorPassword2.style.display='none';
-    
-    // }
-  
-
-
-
-
 
   const formi = document.getElementById('form');
    const errorPassword = document.getElementById('error-password');
